@@ -1,0 +1,22 @@
+---
+layout: default
+scripts:
+  - /js/script.js
+---
+
+<section>
+	<h2>Order a Flag</h2>
+	<form netlify>
+		<label for="name">Name of Person to be Honored</label>
+		<input type="text" id="name">
+		<label for="branch">Branch of Person to be Honored</label>
+		<input type="text" id="branch">
+		<select id="status">
+			<option value="active">Active Military</option>
+			<option value="retired">Retired</option>
+			<option value="veteran">Veteran</option>
+			<option value="deceased" checked>Deceased</option>
+		</select>
+		<button type="submit">Order</button>
+	</form>
+</section>

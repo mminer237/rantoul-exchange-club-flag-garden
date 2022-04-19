@@ -143,5 +143,14 @@ li:not(:last-child) {
 	margin-bottom: 8px;
 }
 footer {
-	padding: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	img {
+		filter: drop-shadow(1px 1px white);
+		max-width: 120px;
+	}
+	> * {
+		padding: 20px;
+	}
 }

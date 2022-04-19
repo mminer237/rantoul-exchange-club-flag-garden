@@ -11,12 +11,22 @@ scripts:
 		<input type="text" id="name">
 		<label for="branch">Branch of Person to be Honored</label>
 		<input type="text" id="branch">
-		<select id="status">
-			<option value="active">Active Military</option>
-			<option value="retired">Retired</option>
-			<option value="veteran">Veteran</option>
-			<option value="deceased" checked>Deceased</option>
-		</select>
+		<div>
+			<input type="radio" name="status" id="active" value="active">
+			<label for="active">Active Military</label>
+		</div>
+		<div>
+			<input type="radio" name="status" id="retired" value="retired">
+			<label for="retired">Retired</label>
+		</div>
+		<div>
+			<input type="radio" name="status" id="veteran" value="veteran">
+			<label for="veteran">Veteran</label>
+		</div>
+		<div>
+			<input type="radio" name="status" id="deceased" value="deceased" checked>
+			<label for="deceased">Deceased</label>
+		</div>
 		<button type="submit">Order</button>
 	</form>
 </section>

@@ -116,7 +116,7 @@ a:hover {
 	color: var(--link-hover-color);
 }
 form {
-	* {
+	> * {
 		display: block;
 	}
 	label, button[type=submit] {

@@ -32,6 +32,7 @@ body {
 	background-color: var(--background-color);
 	display: flex;
 	flex-direction: column;
+	font-family: sans-serif;
 	margin: 0;
 	min-height: 100vh;
 }
@@ -53,7 +54,6 @@ header {
 		filter: drop-shadow(1px 1px 3px #000000c0);
 	}
 	h1 {
-		color: var(--text-color);
 		display: inline-block;
 		letter-spacing: 3px;
 		margin: 0;
@@ -62,14 +62,22 @@ header {
 	}
 }
 h1 {
-	font-size: 60px;
-	line-height: 60px;
+	font-size: unquote("min(60px, 11vw)");
+	line-height: unquote("min(60px, 11vw)");
+	.smaller {
+		font-size: 75%;
+		letter-spacing: 2px;
+	}
 }
 header, footer {
 	background-color: var(--theme-color);
 	text-align: center;
-	* {
+	color: white;
+	a {
 		color: white;
+	}
+	a:hover {
+		color: #E0E0E0;
 	}
 }
 main {
@@ -119,10 +127,17 @@ form {
 	> * {
 		display: block;
 	}
-	label, button[type=submit] {
+	label, legend, button[type=submit] {
 		font-weight: bold;
 		margin-top: 1ex;
 	}
+}
+fieldset {
+	margin-top: 1ex;
+}
+button[type="submit"] {
+	font-size: 115%;
+	padding: 4px 8px;
 }
 li:not(:last-child) {
 	margin-bottom: 8px;

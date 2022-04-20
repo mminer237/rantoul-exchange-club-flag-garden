@@ -131,6 +131,10 @@ form {
 		font-weight: bold;
 		margin-top: 1ex;
 	}
+	.required:after {
+		content:" *";
+		color: red;
+	}
 }
 fieldset {
 	margin-top: 1ex;

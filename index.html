@@ -7,26 +7,26 @@ scripts:
 <section>
 	<h3>Order a Flag</h2>
 	<form netlify>
-		<label for="name">Name of Person to be Honored</label>
-		<input type="text" id="name">
+		<label for="name" class="required">Name of Person to be Honored</label>
+		<input type="text" id="name" required>
 		<label for="branch">Branch of Person to be Honored</label>
 		<input type="text" id="branch">
 		<fieldset>
-			<legend>Status</legend>
+			<legend class="required">Status</legend>
 			<div>
-				<input type="radio" name="status" id="active" value="active">
+				<input type="radio" name="status" id="active" value="active" required>
 				<label for="active">Active Military</label>
 			</div>
 			<div>
-				<input type="radio" name="status" id="retired" value="retired">
+				<input type="radio" name="status" id="retired" value="retired" required>
 				<label for="retired">Retired</label>
 			</div>
 			<div>
-				<input type="radio" name="status" id="veteran" value="veteran">
+				<input type="radio" name="status" id="veteran" value="veteran" required>
 				<label for="veteran">Veteran</label>
 			</div>
 			<div>
-				<input type="radio" name="status" id="deceased" value="deceased" checked>
+				<input type="radio" name="status" id="deceased" value="deceased" required checked>
 				<label for="deceased">Deceased</label>
 			</div>
 		</fieldset>

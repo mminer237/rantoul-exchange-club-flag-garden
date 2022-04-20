@@ -124,7 +124,7 @@ a:hover {
 	color: var(--link-hover-color);
 }
 form {
-	> * {
+	> *, .break > * {
 		display: block;
 	}
 	label, legend, button[type=submit] {

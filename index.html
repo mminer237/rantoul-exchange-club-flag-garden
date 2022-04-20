@@ -1,35 +1,46 @@
 ---
 layout: default
-scripts:
-  - /js/script.js
 ---
 
 <section>
 	<h3>Order a Flag</h2>
-	<form netlify>
-		<label for="name" class="required">Name of Person to be Honored</label>
-		<input type="text" id="name" required>
+	<form
+		action="/success"
+		data-netlify="true"
+	>
+		<label for="honoree-name" class="required">Name of Person to be Honored</label>
+		<input type="text" id="honoree-name" name="honoree-name" required>
 		<label for="branch">Branch of Person to be Honored</label>
-		<input type="text" id="branch">
+		<input type="text" id="branch" name="branch">
 		<fieldset>
 			<legend class="required">Status</legend>
 			<div>
-				<input type="radio" name="status" id="active" value="active" required>
+				<input type="checkbox" name="active" id="active" value="active">
 				<label for="active">Active Military</label>
 			</div>
 			<div>
-				<input type="radio" name="status" id="retired" value="retired" required>
+				<input type="checkbox" name="retired" id="retired" value="retired">
 				<label for="retired">Retired</label>
 			</div>
 			<div>
-				<input type="radio" name="status" id="veteran" value="veteran" required>
+				<input type="checkbox" name="veteran" id="veteran" value="veteran">
 				<label for="veteran">Veteran</label>
 			</div>
 			<div>
-				<input type="radio" name="status" id="deceased" value="deceased" required checked>
+				<input type="checkbox" name="deceased" id="deceased" value="deceased" checked>
 				<label for="deceased">Deceased</label>
 			</div>
 		</fieldset>
+		<fieldset class="break">
+			<legend>Your Info</legend>
+			<label for="customer-name" class="required">Name</label>
+			<input type="text" id="customer-name" name="customer-name" required>
+			<label for="phone-number">Phone Number</label>
+			<input type="tel" id="phone-number" name="phone-number">
+			<label for="customer-email">Email</label>
+			<input type="email" id="customer-email" name="customer-email">
+		</fieldset>
 		<button type="submit">Order</button>
 	</form>
+	<p>Proceeds go to educational scholarships</p>
 </section>
